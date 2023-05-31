@@ -1,0 +1,67 @@
+[
+    {
+       "question": "Pag nagkita ang mag kumare sa daan, ito ang sinasabi. 'Mars ___________!'",
+       "answers": [
+            { "text": "Kumusta na", "score": 27 },
+            { "text": "Ano ang latest?", "score": 20 },
+            { "text": "Pautang", "score": 17 },
+            { "text": "Anong balita", "score": 15 },
+            { "text": "Blooming/Gumanda ka", "score": 12 },
+            { "text": "Tumaba ka", "score": 10 }
+       ]
+    },
+    {
+        "question": "Kadalasang inaabangang araw ng mga bata",
+        "answers": [
+            { "text": "Pasko", "score": 30 },
+            { "text": "Sabado", "score": 25 },
+            { "text": "Birthday", "score": 23 },
+            { "text": "Holiday/walang pasok", "score": 17 },
+            { "text": "Friday", "score": 15 }
+        ]
+    },
+    {
+        "question": "Gulay na hindi green",
+        "answers": [
+            { "text": "Carrots", "score": 55 },
+            { "text": "Patatas", "score": 9 },
+            { "text": "Talong", "score": 8 },
+            { "text": "Kamatis", "score": 7},
+            { "text": "Singkamas", "score": 5 },
+            { "text": "Sayote", "score": 3 }
+        ]
+    },
+    {
+        "question": "Ano ang ginagawa ng isang teen ager na ikinagagalit ng isang magulang",
+        "answers": [
+            { "text": "Magsinungaling", "score": 32 },
+            { "text": "Late umuwi", "score": 22 },
+            { "text": "Sumasagot", "score": 19 },
+            { "text": "Maglasing", "score": 12 },
+            { "text": "Manigarilyo", "score": 7 },
+            { "text": "Tatamad-tamad", "score": 6 }
+        ]
+    },
+    {
+        "question": "Top 7 na paboritong ulam ng mga Pinoy",
+        "answers": [
+            { "text": "Adobo", "score": 35 },
+            { "text": "Inasal", "score": 30 },
+            { "text": "Lechon", "score": 27 },
+            { "text": "Kare kare", "score": 25 },
+            { "text": "Pinakbet", "score": 20 },
+            { "text": "Tinolang manok", "score": 18 }
+        ]
+    },
+    {
+        "question": "Mga maligno/multo na kinakakatakutan ng mga Pilipino",
+        "answers": [
+            { "text": "Manananggal", "score": 40 },
+            { "text": "Aswang", "score": 35 },
+            { "text": "Tiyanak", "score": 30 },
+            { "text": "Tikbalang", "score": 25 },
+            { "text": "Kapre", "score": 22 },
+            { "text": "White lady", "score": 10 }
+        ]
+    }
+]
