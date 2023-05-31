@@ -63,5 +63,28 @@
             { "text": "Kapre", "score": 22 },
             { "text": "White lady", "score": 10 }
         ]
+    },
+    {
+        "question": "Mga bagay na kadalasang nakikita sa isang Pinoy na bahay",
+        "answers": [
+            { "text": "Tabo at timba", "score": 55 },
+            { "text": "Tsinelas/step in", "score": 40 },
+            { "text": "Kulambo", "score": 35 },
+            { "text": "Walis tingting", "score": 20 },
+            { "text": "Ice cream container na may lamang isda", "score": 15 },
+            { "text": "Last supper na decoration", "score": 10 }
+        ]
+    },
+    {
+        "question": "Mga expectations pag dumalo sa Filipino party",
+        "answers": [
+            { "text": "Filipino time", "score": 28 },
+            { "text": "Maraming pagkain", "score": 23 },
+            { "text": "Videoke", "score": 20 },
+            { "text": "Ziplock/empty containers", "score": 18 },
+            { "text": "Picturan/Kodak moments", "score": 15 },
+            { "text": "Maraming bata", "score": 5 }
+        ]
     }
+
 ]
