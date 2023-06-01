@@ -107,5 +107,27 @@
             { "text": "Table", "score": 6 },
             { "text": "Kalapati", "score": 4 }
         ]
+    },
+    {
+        "question": "Mahirap labhan kapag gamit ang kamay",
+        "answers": [
+            { "text": "Jeans", "score": 40 },
+            { "text": "Kumot", "score": 24 },
+            { "text": "Bedsheet", "score": 12 },
+            { "text": "Puting damit", "score": 5 },
+            { "text": "Carpet", "score": 3 },
+            { "text": "Sapatos", "score": 3 }
+        ]
+    },
+    {
+        "question": "Nag survey kami ng 100 kalalakihan, bukod sa pare o pre, ano pa ang tawagan nila?",
+        "answers": [
+            { "text": "Tol/utol", "score": 57 },
+            { "text": "Bro/Brod", "score": 24 },
+            { "text": "Pards", "score": 3 },
+            { "text": "Tropa", "score": 3 },
+            { "text": "Igan", "score": 2 },
+            { "text": "Pre", "score": 1 }
+        ]
     }
 ]
