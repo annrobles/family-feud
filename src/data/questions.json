@@ -195,5 +195,27 @@
             { "text": "Grocery list", "score": 6 },
             { "text": "Password", "score": 5 }
         ]
+    },
+    {
+        "question": "Magbigay ng mga tunog na nililikha ng katawan",
+        "answers": [
+            { "text": "Utot", "score": 24 },
+            { "text": "Boses", "score": 14 },
+            { "text": "Sipol", "score": 10 },
+            { "text": "Hilik", "score": 9 },
+            { "text": "Palakpak", "score": 8 },
+            { "text": "Dighay", "score": 6 }
+        ]
+    },
+    {
+        "question": "Magbigay ng bagay na hinihipan",
+        "answers": [
+            { "text": "Lobo", "score": 54 },
+            { "text": "Kandila", "score": 28 },
+            { "text": "Pito", "score": 5 },
+            { "text": "Torotot", "score": 4 },
+            { "text": "Apoy", "score": 3 },
+            { "text": "Posporo", "score": 2 }
+        ]
     }
 ]
