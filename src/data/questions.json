@@ -151,5 +151,27 @@
             { "text": "No allowance", "score": 4 },
             { "text": "Hindi pinapakain", "score": 2 }
         ]
+    },
+    {
+        "question": "Kapag nangangati ang likod, ano ang ginagamit pang kamot?",
+        "answers": [
+            { "text": "Stick", "score": 30 },
+            { "text": "Suklay", "score": 25 },
+            { "text": "Hanger", "score": 11 },
+            { "text": "Sandok", "score": 5 },
+            { "text": "Tinidor", "score": 3 },
+            { "text": "Kamay", "score": 3 }
+        ]
+    },
+    {
+        "question": "Habang tumatanda ang isang tao, ano ang nawawala o nauubos sau",
+        "answers": [
+            { "text": "Buhok", "score": 1 },
+            { "text": "Lakas", "score": 2 },
+            { "text": "Kagandahan/kagwapuhan", "score": 3 },
+            { "text": "Memorya", "score": 4 },
+            { "text": "Ngipin", "score": 5 },
+            { "text": "Kalamnan", "score": 2 }
+        ]
     }
 ]
