@@ -129,5 +129,27 @@
             { "text": "Igan", "score": 2 },
             { "text": "Pre", "score": 1 }
         ]
+    },
+    {
+        "question": "Pag may mga sale sa mall, ano ang kadalasang mabiling gamit",
+        "answers": [
+            { "text": "T shirts", "score": 62 },
+            { "text": "Sapatos", "score": 16 },
+            { "text": "Pantalon", "score": 5 },
+            { "text": "Appliances", "score": 3 },
+            { "text": "Cosmetics", "score": 4 },
+            { "text": "Laruan", "score": 1 }
+        ]
+    },
+    {
+        "question": "Ano ang parusa na binibigay ng magulang sa pasaway na anak?",
+        "answers": [
+            { "text": "Palo", "score": 40 },
+            { "text": "Bawal lumabas", "score": 20 },
+            { "text": "Luhod sa asin", "score": 13 },
+            { "text": "No cellphone", "score": 9 },
+            { "text": "No allowance", "score": 4 },
+            { "text": "Hindi pinapakain", "score": 2 }
+        ]
     }
 ]
