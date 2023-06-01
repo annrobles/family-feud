@@ -85,6 +85,27 @@
             { "text": "Picturan/Kodak moments", "score": 15 },
             { "text": "Maraming bata", "score": 5 }
         ]
+    },
+    {
+        "question": "Mga bagay na malapit sa grocery cashier",
+        "answers": [
+            { "text": "Candies/chocolate", "score": 27 },
+            { "text": "Toothbrush", "score": 17 },
+            { "text": "Batteries", "score": 14 },
+            { "text": "Lighter", "score": 8 },
+            { "text": "Cigarettes", "score": 7 },
+            { "text": "Toothpaste", "score": 3 }
+        ]
+    },
+    {
+        "question": "Bukod sa magician, ano pa ang makikita sa isang magic show",
+        "answers": [
+            { "text": "Kahon", "score": 20 },
+            { "text": "Assistant", "score": 15 },
+            { "text": "Hat", "score": 12 },
+            { "text": "Baraha", "score": 8 },
+            { "text": "Table", "score": 6 },
+            { "text": "Kalapati", "score": 4 }
+        ]
     }
-
 ]
