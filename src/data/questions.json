@@ -173,5 +173,27 @@
             { "text": "Ngipin", "score": 5 },
             { "text": "Kalamnan", "score": 2 }
         ]
+    },
+    {
+        "question": "Paano mo idedescribe ang pinya sa isang taong bulag?",
+        "answers": [
+            { "text": "Maraming mata", "score": 71 },
+            { "text": "Matinik/magaspang", "score": 17 },
+            { "text": "Maasim/matamis", "score": 4 },
+            { "text": "May korona", "score": 3 },
+            { "text": "Kulay dilaw", "score": 2 },
+            { "text": "Maliit", "score": 1 }
+        ]
+    },
+    {
+        "question": "Ano ang isinusulat mo sa papel para di mo makalimutan",
+        "answers": [
+            { "text": "Phone number", "score": 31 },
+            { "text": "Utang/bills", "score": 12 },
+            { "text": "Things to do", "score": 11 },
+            { "text": "Important dates sched", "score": 11 },
+            { "text": "Grocery list", "score": 6 },
+            { "text": "Password", "score": 5 }
+        ]
     }
 ]
