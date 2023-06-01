@@ -217,5 +217,38 @@
             { "text": "Apoy", "score": 3 },
             { "text": "Posporo", "score": 2 }
         ]
+    },
+    {
+        "question": "Bukod sa paglalaba at paliligo, saan pa ginagamit ang tubig",
+        "answers": [
+            { "text": "Halaman", "score": 20 },
+            { "text": "Inumin", "score": 17 },
+            { "text": "Hugas ng plato", "score": 15 },
+            { "text": "Paglilinis ng bahay", "score": 14 },
+            { "text": "Pagluluto", "score": 13 },
+            { "text": "Carwash", "score": 8 }
+        ]
+    },
+    {
+        "question": "Kumpletuhin ang sagot, sinasabi ng teacher sa isang grade school student “Bukas magdala kayo ng?",
+        "answers": [
+            { "text": "Baon", "score": 15 },
+            { "text": "Basahan", "score": 14 },
+            { "text": "Walis", "score": 14 },
+            { "text": "Pencil/crayons", "score": 8 },
+            { "text": "Floor wax", "score": 7 },
+            { "text": "Pera", "score": 6 }
+        ]
+    },
+    {
+        "question": "Bukod sa mga contestants, ano pa ang makikita sa mga beauty contests?",
+        "answers": [
+            { "text": "Judges", "score": 49 },
+            { "text": "Hosts", "score": 29 },
+            { "text": "Audience", "score": 13 },
+            { "text": "Coach", "score": 3 },
+            { "text": "Make up artists", "score": 3 },
+            { "text": "Popcorn", "score": 2 }
+        ]
     }
 ]
