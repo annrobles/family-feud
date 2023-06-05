@@ -20,4 +20,8 @@ export class HomeComponent implements OnInit, OnDestroy {
   ngOnDestroy(){
   }
 
+  start() {
+    this.router.navigateByUrl('/game');
+  }
+
 }
