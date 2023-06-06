@@ -1,10 +1,23 @@
 <div class="question container" *ngIf="question">
-  <h2>{{question.question}}</h2>
+  <h2 class="question__text">{{question.question}}</h2>
 
   <div class="question__options">
-    <div *ngFor="let answer of question.answers">
-      <div>{{ answer.text }}</div>
-      <div>{{ answer.score }}</div>
+    <div class="question__options_left-col">
+      <ng-container *ngFor="let answer of question.answers; let i = index">
+        <div class="question__options_rows" *ngIf="i < 3">
+          <div>{{ answer.text }}</div>
+          <div>{{ answer.score }}</div>
+        </div>
+      </ng-container>      
+    </div>
+
+    <div class="question__options_right-col">
+      <ng-container *ngFor="let answer of question.answers; let i = index">
+        <div class="question__options_rows" *ngIf="i > 2">
+          <div>{{ answer.text }}</div>
+          <div>{{ answer.score }}</div>
+        </div>
+      </ng-container>      
     </div>
   </div>
 
