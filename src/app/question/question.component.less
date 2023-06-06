@@ -7,7 +7,7 @@
   text-align: center;
 }
 .question h2 {
-  font-size: 34px;
+  font-size: 54px;
 }
 
 .question__btn {
@@ -15,6 +15,10 @@
   display: flex;
   color: gray;
   justify-content: space-around;
+
+  span {
+    display: none;
+  }
 }
 .question__btn button {
   background-color: transparent;
@@ -26,7 +30,10 @@
   font-size: 44px;
 }
 .question__btn button:hover{
-  background-color: rgb(248,249,250);
+  color: #030752;
+  background-color: #FFF;
+  border: 2px solid #030752;
+  cursor: pointer;
 }
 
 .question__options {
@@ -44,7 +51,7 @@
 .question__options_rows {
   background-color: #f1f1f1;
   padding: 5px;
-  font-size: 30px;
+  font-size: 40px;
   display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -68,6 +75,28 @@
     width: 50px; 
   }
 }
+
+.question__options_rows_hide_answer {
+    background-color: #f1f1f1;
+    padding: 5px;
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    margin: 10px 0;
+  
+    > div:first-child {
+      background: linear-gradient(rgb(73, 98, 213) 0%, rgb(105, 136, 227) 50%, rgb(73, 98, 213) 100%) white;
+      user-select: none;
+      color: #fff;
+      width: 100%;
+      text-align: center;
+      padding-left: 8px;
+    }
+  }
 
 .question__options_right-col {
   margin-left: 10px;

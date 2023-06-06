@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, HostListener, OnInit} from '@angular/core';
 import { Input, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -14,9 +14,10 @@ export class QuestionComponent implements OnInit {
   @Input() question!: Question;
   @Input() questionNumber!:number;
   @Input() quizLength!:number;
-  selectedOption = ''
   @Output() nextQuestion: EventEmitter<any> = new EventEmitter();
   @Output() prevQuestion: EventEmitter<any> = new EventEmitter();
+
+  selectedOption: number[] = [];
 
   constructor(private router: Router) { }
 
@@ -26,4 +27,10 @@ export class QuestionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  @HostListener('document:keydown', ['$event'])
+  onKeyDown(event: KeyboardEvent) {
+    if (parseInt(event.key) > 0 && parseInt(event.key) < 7) {
+      this.selectedOption.push(parseInt(event.key)-1);
+    }    
+  }
 }
