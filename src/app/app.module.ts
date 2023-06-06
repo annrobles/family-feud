@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 
 import { HomeComponent } from './home/home.component';
 import { GameComponent } from './game/game.component';
+import { QuestionComponent } from './question/question.component';
 
 import { QuestionService } from './services/question.service';
 
@@ -14,7 +15,8 @@ import { QuestionService } from './services/question.service';
   declarations: [
     AppComponent,
     HomeComponent,
-    GameComponent
+    GameComponent,
+    QuestionComponent
   ],
   imports: [
     BrowserModule,

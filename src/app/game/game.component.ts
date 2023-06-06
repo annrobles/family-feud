@@ -14,6 +14,7 @@ import { QuestionService } from '../services/question.service';
 export class GameComponent implements OnInit, OnDestroy {
 
     questions: Question[] = [];
+    questionNumber = 0;
 
     constructor(
         private router: Router,
@@ -28,6 +29,13 @@ export class GameComponent implements OnInit, OnDestroy {
     }
 
     ngOnDestroy(){
+    }
+
+    goToNext() {
+        this.questionNumber++
+    }
+    goToPrevious() {
+        this.questionNumber--
     }
 
 }
