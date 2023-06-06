@@ -1,0 +1,21 @@
+<div class="question container" *ngIf="question">
+  <h2>{{question.question}}</h2>
+
+  <div class="question__options">
+    <div *ngFor="let answer of question.answers">
+      <div>{{ answer.text }}</div>
+      <div>{{ answer.score }}</div>
+    </div>
+  </div>
+
+  <div class="question__btn">
+    <button
+      (click)="this.prevQuestion.emit()"
+      [disabled]="questionNumber === 1"><</button>
+    <span>{{questionNumber}}/{{quizLength}}</span>
+    <button
+      (click)="this.nextQuestion.emit()"
+      *ngIf="questionNumber !== quizLength"
+      [disabled]="questionNumber === quizLength">></button>
+  </div>
+</div>
