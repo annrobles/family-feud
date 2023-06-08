@@ -1,18 +1,20 @@
 <div class="question container" *ngIf="question" (keydown)="onKeyDown($event)">
-  <img class="wrong-answer" src="assets/red-x.png" alt="red x" [ngClass]="showWrongMark ? 'show': 'hide'">
+  <img class="wrong-answer grow" src="assets/red-x.png" alt="red x" [ngClass]="showWrongMark ? 'show': 'hide'">
 
   <h2 class="question__text">{{question.question}}</h2>
 
   <div class="question__options">
     <div class="question__options_left-col">
       <ng-container *ngFor="let answer of question.answers; let i = index">
-        <div class="question__options_rows" *ngIf="i < 3 && selectedOption[questionNumber].includes(i)">
-          <div>{{ (selectedOption[questionNumber].includes(i) ? answer.text : ("Answer " + (i + 1))) }}</div>
-          <div>{{ answer.score }}</div>
-        </div>
-        <div class="question__options_rows_hide_answer" *ngIf="i < 3 && !selectedOption[questionNumber].includes(i)">
-          <div>
-            <div>{{ (i + 1) }}</div>
+        <div class="flipper" [ngClass]="selectedOption[questionNumber].includes(i) ? 'flip': ''">
+          <div class="question__options_rows" *ngIf="i < 3 && selectedOption[questionNumber].includes(i)">
+            <div>{{ (selectedOption[questionNumber].includes(i) ? answer.text : ("Answer " + (i + 1))) }}</div>
+            <div>{{ answer.score }}</div>
+          </div>
+          <div class="question__options_rows_hide_answer" *ngIf="i < 3 && !selectedOption[questionNumber].includes(i)">
+            <div>
+              <div>{{ (i + 1) }}</div>
+            </div>
           </div>
         </div>
       </ng-container>      
@@ -20,13 +22,15 @@
 
     <div class="question__options_right-col">
       <ng-container *ngFor="let answer of question.answers; let i = index">
-        <div class="question__options_rows" *ngIf="i > 2 && selectedOption[questionNumber].includes(i)">
-          <div>{{ (selectedOption[questionNumber].includes(i) ? answer.text : ("Answer " + (i + 1))) }}</div>
-          <div>{{ answer.score }}</div>
-        </div>
-        <div class="question__options_rows_hide_answer" *ngIf="i > 2 && !selectedOption[questionNumber].includes(i)">
-          <div>
-            <div>{{ (i + 1) }}</div>
+        <div class="flipper" [ngClass]="selectedOption[questionNumber].includes(i) ? 'flip': ''">
+          <div class="question__options_rows" *ngIf="i > 2 && selectedOption[questionNumber].includes(i)">
+            <div>{{ (selectedOption[questionNumber].includes(i) ? answer.text : ("Answer " + (i + 1))) }}</div>
+            <div>{{ answer.score }}</div>
+          </div>
+          <div class="question__options_rows_hide_answer" *ngIf="i > 2 && !selectedOption[questionNumber].includes(i)">
+            <div>
+              <div>{{ (i + 1) }}</div>
+            </div>
           </div>
         </div>
       </ng-container>      

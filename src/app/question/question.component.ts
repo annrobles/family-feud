@@ -59,6 +59,7 @@ export class QuestionComponent implements OnInit {
       this.selectedOption[this.questionNumber] = [];
     }
     this.nextQuestion.emit();
+    this.resetRetryCounter();
   }
 
   goToPrevious() {
