@@ -15,6 +15,7 @@ export class GameComponent implements OnInit, OnDestroy {
 
     questions: Question[] = [];
     questionNumber = 0;
+    selectedOption: number[][] = [];
 
     constructor(
         private router: Router,
@@ -24,7 +25,6 @@ export class GameComponent implements OnInit, OnDestroy {
     ngOnInit(): void {  
         this.questionService.get().subscribe((response) => {
             this.questions = response;
-            console.log("this.questions ", this.questions)
         }); 
     }
 
@@ -33,6 +33,9 @@ export class GameComponent implements OnInit, OnDestroy {
 
     goToNext() {
         this.questionNumber++
+        if (!this.selectedOption[this.questionNumber]) {
+            this.selectedOption[this.questionNumber] = [];
+          }
     }
     goToPrevious() {
         this.questionNumber--

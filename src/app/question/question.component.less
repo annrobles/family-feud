@@ -5,6 +5,7 @@
 .question {
   margin-top: 30px;
   text-align: center;
+  position: relative;
 }
 .question h2 {
   font-size: 54px;
@@ -100,4 +101,26 @@
 
 .question__options_right-col {
   margin-left: 10px;
+}
+
+.wrong-answer {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 250px;
+  margin: auto;
+  display: block;
+  margin-top: 35px;
+}
+
+.wrong-answer {
+  &.show {
+    display: block;
+  }
+  &.hide {
+    display: none;
+  }
 }

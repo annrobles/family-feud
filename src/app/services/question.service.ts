@@ -6,6 +6,7 @@ import { Question } from "../model/question.model";
 @Injectable()
 export class QuestionService {
     endpoint = 'https://family-feud-api.herokuapp.com/api/questions';
+    //endpoint = 'http://localhost:8080/api/questions';
 
     constructor(
         private http: HttpClient) {

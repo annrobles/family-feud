@@ -1,14 +1,16 @@
 <div class="question container" *ngIf="question" (keydown)="onKeyDown($event)">
+  <img class="wrong-answer" src="assets/red-x.png" alt="red x" [ngClass]="showWrongMark ? 'show': 'hide'">
+
   <h2 class="question__text">{{question.question}}</h2>
 
   <div class="question__options">
     <div class="question__options_left-col">
       <ng-container *ngFor="let answer of question.answers; let i = index">
-        <div class="question__options_rows" *ngIf="i < 3 && selectedOption.includes(i)">
-          <div>{{ (selectedOption.includes(i) ? answer.text : ("Answer " + (i + 1))) }}</div>
+        <div class="question__options_rows" *ngIf="i < 3 && selectedOption[questionNumber].includes(i)">
+          <div>{{ (selectedOption[questionNumber].includes(i) ? answer.text : ("Answer " + (i + 1))) }}</div>
           <div>{{ answer.score }}</div>
         </div>
-        <div class="question__options_rows_hide_answer" *ngIf="i < 3 && !selectedOption.includes(i)">
+        <div class="question__options_rows_hide_answer" *ngIf="i < 3 && !selectedOption[questionNumber].includes(i)">
           <div>{{ (i + 1) }}</div>
         </div>
       </ng-container>      
@@ -16,11 +18,11 @@
 
     <div class="question__options_right-col">
       <ng-container *ngFor="let answer of question.answers; let i = index">
-        <div class="question__options_rows" *ngIf="i > 2 && selectedOption.includes(i)">
-          <div>{{ (selectedOption.includes(i) ? answer.text : ("Answer " + (i + 1))) }}</div>
+        <div class="question__options_rows" *ngIf="i > 2 && selectedOption[questionNumber].includes(i)">
+          <div>{{ (selectedOption[questionNumber].includes(i) ? answer.text : ("Answer " + (i + 1))) }}</div>
           <div>{{ answer.score }}</div>
         </div>
-        <div class="question__options_rows_hide_answer" *ngIf="i > 2 && !selectedOption.includes(i)">
+        <div class="question__options_rows_hide_answer" *ngIf="i > 2 && !selectedOption[questionNumber].includes(i)">
           <div>{{ (i + 1) }}</div>
         </div>
       </ng-container>      
@@ -29,11 +31,11 @@
 
   <div class="question__btn">
     <button
-      (click)="this.prevQuestion.emit()"
+      (click)="goToPrevious()"
       [disabled]="questionNumber === 1"><</button>
     <span>{{questionNumber}}/{{quizLength}}</span>
     <button
-      (click)="this.nextQuestion.emit()"
+      (click)="goToNext()"
       *ngIf="questionNumber !== quizLength"
       [disabled]="questionNumber === quizLength">></button>
   </div>

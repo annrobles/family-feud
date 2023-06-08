@@ -2,6 +2,7 @@
     <question
       [question]="questions[questionNumber]"
       [questionNumber]="questionNumber+1"
+      [selectedOption]="selectedOption"
       [quizLength]="questions.length"
       (nextQuestion)="this.goToNext()"
       (prevQuestion)="this.goToPrevious()"
