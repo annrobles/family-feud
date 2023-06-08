@@ -96,6 +96,16 @@
       width: 100%;
       text-align: center;
       padding-left: 8px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      display: flex;
+      justify-content: center;
+      > div {
+        width: 40px;
+        height: 100%;
+        background-color: #030752;
+        border-radius: 50%;
+      }
     }
   }
 
@@ -122,5 +132,20 @@
   }
   &.hide {
     display: none;
+  }
+}
+
+.question-retry {
+  text-align: center;
+
+  img {
+    width: 40px;
+  }
+
+  span {
+    display: block;
+    color: #FFF;
+    cursor: pointer;
+    text-decoration: underline;    
   }
 }

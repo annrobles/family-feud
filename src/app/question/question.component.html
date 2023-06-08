@@ -11,7 +11,9 @@
           <div>{{ answer.score }}</div>
         </div>
         <div class="question__options_rows_hide_answer" *ngIf="i < 3 && !selectedOption[questionNumber].includes(i)">
-          <div>{{ (i + 1) }}</div>
+          <div>
+            <div>{{ (i + 1) }}</div>
+          </div>
         </div>
       </ng-container>      
     </div>
@@ -23,7 +25,9 @@
           <div>{{ answer.score }}</div>
         </div>
         <div class="question__options_rows_hide_answer" *ngIf="i > 2 && !selectedOption[questionNumber].includes(i)">
-          <div>{{ (i + 1) }}</div>
+          <div>
+            <div>{{ (i + 1) }}</div>
+          </div>
         </div>
       </ng-container>      
     </div>
@@ -39,4 +43,10 @@
       *ngIf="questionNumber !== quizLength"
       [disabled]="questionNumber === quizLength">></button>
   </div>
+</div>
+<div class="question-retry">
+  <ng-container *ngFor="let item of [].constructor(retryCounter); let i = index">
+    <img src="assets/circle_red_letter-x.png" alt="red x" *ngIf="retryCounter > 0">
+  </ng-container>
+  <span *ngIf="retryCounter > 0" (click)="resetRetryCounter()">Clear</span>
 </div>

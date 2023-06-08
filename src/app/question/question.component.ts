@@ -65,4 +65,8 @@ export class QuestionComponent implements OnInit {
     this.questionNumber--;
     this.prevQuestion.emit();
   }
+
+  resetRetryCounter() {
+    this.retryCounter = 0;
+  }
 }
