@@ -48,9 +48,9 @@
       [disabled]="questionNumber === quizLength">></button>
   </div>
 </div>
-<div class="question-retry">
-  <ng-container *ngFor="let item of [].constructor(retryCounter); let i = index">
-    <img src="assets/circle_red_letter-x.png" alt="red x" *ngIf="retryCounter > 0">
+<div class="question-retry" *ngIf="retries[questionNumber] > 0">
+  <ng-container *ngFor="let item of [].constructor(retries[questionNumber]); let i = index">
+    <img src="assets/circle_red_letter-x.png" alt="red x" >
   </ng-container>
-  <span *ngIf="retryCounter > 0" (click)="resetRetryCounter()">Clear</span>
+  <span *ngIf="retries[questionNumber] > 0" (click)="retries[questionNumber] = 0">Clear</span>
 </div>

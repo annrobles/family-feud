@@ -16,6 +16,7 @@ export class GameComponent implements OnInit, OnDestroy {
     questions: Question[] = [];
     questionNumber = 0;
     selectedOption: number[][] = [];
+    retries: number[] = [];
 
     constructor(
         private router: Router,
@@ -32,13 +33,15 @@ export class GameComponent implements OnInit, OnDestroy {
     }
 
     goToNext() {
-        this.questionNumber++
+        this.questionNumber++;
         if (!this.selectedOption[this.questionNumber]) {
             this.selectedOption[this.questionNumber] = [];
-          }
+            this.retries[this.questionNumber] = 0;
+        }
     }
     goToPrevious() {
-        this.questionNumber--
+        this.questionNumber--;
+        this.retries[this.questionNumber] = 0;
     }
 
 }

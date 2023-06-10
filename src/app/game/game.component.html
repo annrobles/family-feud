@@ -3,6 +3,7 @@
       [question]="questions[questionNumber]"
       [questionNumber]="questionNumber+1"
       [selectedOption]="selectedOption"
+      [retries]="retries"
       [quizLength]="questions.length"
       (nextQuestion)="this.goToNext()"
       (prevQuestion)="this.goToPrevious()"
