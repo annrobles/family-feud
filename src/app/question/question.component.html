@@ -1,5 +1,16 @@
 <div class="question container" *ngIf="question" (keydown)="onKeyDown($event)">
-  <img class="wrong-answer grow" src="assets/red-x.png" alt="red x" [ngClass]="showWrongMark ? 'show': 'hide'">
+  <div [ngClass]="showWrongMark ? 'show': 'hide'">
+    <img class="wrong-answer grow" src="assets/red-x.png" alt="red x" >
+    <audio autoplay *ngIf="wrongAnswerCounter == 1">
+      <source src="assets/wrong-answer.mp3" type="audio/mpeg">
+    </audio>
+    <audio autoplay *ngIf="wrongAnswerCounter == 2">
+      <source src="assets/wrong-answer.mp3" type="audio/mpeg">
+    </audio>
+    <audio autoplay *ngIf="wrongAnswerCounter == 3">
+      <source src="assets/wrong-answer.mp3" type="audio/mpeg">
+    </audio>
+  </div>
 
   <h2 class="question__text">{{question.question}}</h2>
 
@@ -10,6 +21,10 @@
           <div class="question__options_rows" *ngIf="i < 3 && selectedOption[questionNumber].includes(i)">
             <div>{{ (selectedOption[questionNumber].includes(i) ? answer.text : ("Answer " + (i + 1))) }}</div>
             <div>{{ answer.score }}</div>
+            <audio autoplay>
+              <source src="assets/ting.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
           </div>
           <div class="question__options_rows_hide_answer" *ngIf="i < 3 && !selectedOption[questionNumber].includes(i)">
             <div>
@@ -26,6 +41,10 @@
           <div class="question__options_rows" *ngIf="i > 2 && selectedOption[questionNumber].includes(i)">
             <div>{{ (selectedOption[questionNumber].includes(i) ? answer.text : ("Answer " + (i + 1))) }}</div>
             <div>{{ answer.score }}</div>
+            <audio autoplay>
+              <source src="assets/ting.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
           </div>
           <div class="question__options_rows_hide_answer" *ngIf="i > 2 && !selectedOption[questionNumber].includes(i)">
             <div>

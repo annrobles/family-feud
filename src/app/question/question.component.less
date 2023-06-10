@@ -130,13 +130,13 @@
   animation-timing-function: linear;
 }
 
-.wrong-answer {
-  &.show {
-    display: block;
-  }
-  &.hide {
-    display: none;
-  }
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+  backface-visibility: hidden;
 }
 
 .question-retry {

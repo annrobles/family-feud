@@ -20,6 +20,7 @@ export class QuestionComponent implements OnInit {
   @Output() prevQuestion: EventEmitter<any> = new EventEmitter();
 
   showWrongMark: boolean = false;
+  wrongAnswerCounter: number =0;
 
   constructor(private router: Router) {
   }
@@ -32,7 +33,6 @@ export class QuestionComponent implements OnInit {
       this.selectedOption[this.questionNumber] = [];
       this.retries[this.questionNumber] = 0;
     }
-    console.log("xxx")
   }
 
 private xKeyExecuted: boolean = false;
@@ -47,6 +47,7 @@ onKeyDown(event: KeyboardEvent) {
   if (event.key === "x" && !this.xKeyExecuted) {
     this.xKeyExecuted = true;
     this.showWrongMark = true;
+    this.wrongAnswerCounter++;
 
     let i = 0;
     const interval = setInterval(() => {
@@ -66,6 +67,7 @@ onKeyDown(event: KeyboardEvent) {
     if (!this.selectedOption[this.questionNumber]) {
       this.selectedOption[this.questionNumber] = [];
       this.retries[this.questionNumber] = 0;
+      this.wrongAnswerCounter = 0;
     }
     this.nextQuestion.emit();
   }
@@ -74,5 +76,6 @@ onKeyDown(event: KeyboardEvent) {
     this.questionNumber--;
     this.prevQuestion.emit();
     this.retries[this.questionNumber] = 0;
+    this.wrongAnswerCounter = 0;
   }
 }
